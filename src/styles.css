@@ -1,1 +1,59 @@
-/* You can add global styles to this file, and also import other style files */
+:root{
+  --bg:#1f2933;
+  --panel:#111316;
+  --muted:#9aa4af;
+  --accent:#2563eb; 
+  --card-bg:#0f1720;
+  --text:#e6eef6;
+}
+
+html,body{
+  height:100%;
+  margin:0;
+  font-family: Inter, system-ui, Arial, sans-serif;
+  background: linear-gradient(180deg, var(--bg), #0f1720);
+  color:var(--text);
+}
+
+.container{
+  max-width:1100px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+
+.products-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 18px;
+  margin-top: 20px;
+}
+
+
+.card{
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.12));
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  color: var(--text);
+}
+
+.btn{
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+.btn-primary{
+  background: var(--accent);
+  color: white;
+}
+.btn-ghost{
+  background: transparent;
+  color: var(--muted);
+  border: 1px solid rgba(255,255,255,0.04);
+}
+
+.row { display:flex; gap:12px; align-items:center; }
+.mt-8 { margin-top: 8px; }
+.p-12 { padding: 12px; }
