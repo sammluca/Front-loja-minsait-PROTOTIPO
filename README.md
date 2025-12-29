@@ -38,17 +38,4 @@ Interface simulando uma loja virtual com listagem de produtos, cards informativo
 
 ---
 
-## 📂 Estrutura do Projeto (resumida)
 
-```bash
-src/
- ├── app/
- │   ├── components/
- │   │   ├── header/
- │   │   ├── product-card/
- │   │   └── ...
- │   ├── models/
- │   ├── services/
- │   └── app.component.*
- ├── assets/
- └── environments/
